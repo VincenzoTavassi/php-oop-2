@@ -27,6 +27,10 @@ $cats_products = [
     ]
 ];
 
+// Tutti i prodotti dei gatti - array non suddiviso
+$all_cats_products = array_merge($cats_products["food"], $cats_products["Games"], $cats_products["Beds"]);
+
+
 // CANI
 
 $dogs_products = [
@@ -43,3 +47,7 @@ $dogs_products = [
         new BedProduct("Casetta", 2, $dogs, "null", "Al tuo cane serve una casa in più? Eccola", "Mattoni", 50),
     ]
 ];
+
+// Tutti i prodotti dei cani - array non suddiviso
+$all_dogs_products = array_merge($dogs_products["food"], $dogs_products["Games"], $dogs_products["Beds"]);
+var_dump($all_dogs_products);
