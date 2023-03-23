@@ -1,5 +1,5 @@
 <?php
-
+require_once __DIR__ . "/Category.php";
 class Product
 {
     protected $name;
@@ -11,14 +11,14 @@ class Product
     function __construct(
         string $_name,
         float $_price,
-        string $_category,
+        Category $_category,
         string $_picture,
         string $_description
     ) {
         $this->setName($_name);
         $this->setPrice($_price);
         $this->category = $_category;
-        $this->picture = $_picture;
+        $this->setPicture($_picture);
         $this->setDescription($_description);
     }
 
@@ -39,7 +39,7 @@ class Product
 
     public function setPicture($picture)
     {
-        if (strlen($picture) > 10) $this->picture = $picture;
+        if (!empty($picture) && strlen($picture) > 10) $this->picture = $picture;
     }
 
     public function getName()

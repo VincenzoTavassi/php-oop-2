@@ -9,7 +9,7 @@ class BedProduct extends Product
     function __construct(
         string $_name,
         float $_price,
-        string $_category,
+        Category $_category,
         string $_picture,
         string $_description,
         string $_material,

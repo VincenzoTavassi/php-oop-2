@@ -10,7 +10,7 @@ class FoodProduct extends Product
     function __construct(
         string $_name,
         float $_price,
-        string $_category,
+        Category $_category,
         string $_picture,
         string $_description,
         string $_composition,
@@ -52,5 +52,5 @@ class FoodProduct extends Product
     }
 }
 
-$acana = new FoodProduct("Acana", 50.24, "cani", "Immagine", "Mangime per cani", "Pollo, Verdura", 10.0);
-var_dump($acana->getPricePerKg());
+// $acana = new FoodProduct("Acana", 50.24, "cani", "Immagine", "Mangime per cani", "Pollo, Verdura", 10);
+// var_dump($acana);

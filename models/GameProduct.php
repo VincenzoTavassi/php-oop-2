@@ -9,7 +9,7 @@ class GameProduct extends Product
     function __construct(
         string $_name,
         float $_price,
-        string $_category,
+        Category $_category,
         string $_picture,
         string $_description,
         bool $_forPuppy,
@@ -36,5 +36,5 @@ class GameProduct extends Product
     }
 }
 
-$game = new GameProduct("bonga", 10, 'cani', 'picture', 'descrizione', 's', 1);
-var_dump($game);
+// $game = new GameProduct("bonga", 10, 'cani', 'picture', 'descrizione', 's', 1);
+// var_dump($game);
