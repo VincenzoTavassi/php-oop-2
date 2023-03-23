@@ -50,4 +50,3 @@ $dogs_products = [
 
 // Tutti i prodotti dei cani - array non suddiviso
 $all_dogs_products = array_merge($dogs_products["food"], $dogs_products["Games"], $dogs_products["Beds"]);
-var_dump($all_dogs_products);
